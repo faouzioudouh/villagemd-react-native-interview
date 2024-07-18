@@ -1,6 +1,16 @@
-# Welcome to your Expo app 👋
+# Village Medical - Frontend Interview
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![Village Medical](https://www.villagemd.com/hs-fs/hubfs/villagemd-logo-1.png?width=297&height=73&name=villagemd-logo-1.png)
+
+## Introduction
+
+This is a simple application that allows patients to search for providers in their area. The app is built using React-Native, Expo amd react-native-paper.
+
+## Features
+
+- Search for doctors by gender and nationality
+  - Fetch providers using this mock API: https://randomuser.me/api/
+  - Display the results in a list
 
 ## Get started
 
@@ -25,26 +35,32 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## Api Documentation
 
-When you're ready, run:
+#### Requesting Multiple Providers
 
-```bash
-npm run reset-project
+[https://randomuser.me/api/?results=5](https://randomuser.me/api/?results=5)
+
+#### Filter by nationality
+
+[https://randomuser.me/api/?nat=us,gb](https://randomuser.me/api/?nat=us,gb)
+
+#### Filter by gender
+
+[https://randomuser.me/api/?gender=female](https://randomuser.me/api/?gender=female)
+
+#### Pagination
+
+[https://randomuser.me/api/?page=3&results=10&seed=abc](https://randomuser.me/api/?page=3&results=10&seed=abc)
+
+#### API Errors
+
+```json
+{
+  "error": "There was an error"
+}
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Screenshots
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![Providers list](./providers-list.png)
